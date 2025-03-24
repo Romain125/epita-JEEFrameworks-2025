@@ -25,17 +25,31 @@ public class WrestleController {
 
     @GetMapping(path="/simple", produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<Game> showScore(){
-        Game game = games.get("0");
+        Game game = getGame("0");
         if(game == null){
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok().body(game);
     }
 
+    private Game getGame(String gameId) {
+        Game game = games.get(gameId);
+        if(game == null){
+            throw new GameNotFoundException();
+        }
+        return game;
+    }
+
+    @ExceptionHandler(GameNotFoundException.class)
+    public ResponseEntity<Void> handleGameNotFound(GameNotFoundException exception){
+        return ResponseEntity.notFound().build();
+    }
+
     @GetMapping(path="/wrestle/{gameId}")
     public Game showScore(@PathVariable String gameId){
-        return games.get(gameId);
+        return getGame(gameId);
     }
+
 
     @PostMapping(path="/wrestle")
     public void createGame(@RequestBody Game game){
@@ -45,16 +59,17 @@ public class WrestleController {
     @PutMapping(path="/wrestle/{gameId}")// /wrestle?player=player1
     public void incrementScore(@RequestParam String player, @PathVariable String gameId, HttpServletRequest request){
         switch (player){
-            case "player1" : games.get(gameId).incrementScore1();break;
-            case "player2" : games.get(gameId).incrementScore2();
+            case "player1" : getGame(gameId).incrementScore1();break;
+            case "player2" : getGame(gameId).incrementScore2();break;
+            default: throw new PlayerNotFoundException();
         }
         String header = request.getHeader("user-agent");
-        games.get(gameId).addToStats(header);
+        getGame(gameId).addToStats(header);
     }
 
     @DeleteMapping(path="/wrestle/{gameId}")
     public void reset(@PathVariable String gameId){
-        games.get(gameId).reset();
+        getGame(gameId).reset();
     }
 
 
