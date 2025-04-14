@@ -2,16 +2,31 @@ package org.example;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDateTime;
+import java.util.Set;
+
 @Entity
 public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long isbn;
-    private String title;
-    private String author;
+    @Embedded
+    private Title title;
+    @ManyToMany(fetch = FetchType.EAGER)
+    private Set<Author> author;
     @Enumerated(value = EnumType.STRING)
     private BookType type;
+    @Transient
+    private LocalDateTime dataFreshness = LocalDateTime.now();
+
+    public LocalDateTime getDataFreshness() {
+        return dataFreshness;
+    }
+
+    public void setDataFreshness(LocalDateTime dataFreshness) {
+        this.dataFreshness = dataFreshness;
+    }
 
     public BookType getType() {
         return type;
@@ -24,14 +39,14 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, String author) {
-        this.title = title;
-        this.author = author;
+    public Book(String title, Author author) {
+        this.title = new Title(title);
+        this.author = Set.of(author);
     }
 
-    public Book(String title, String author, BookType type) {
-        this.title = title;
-        this.author = author;
+    public Book(String title, Author author, BookType type) {
+        this.title = new Title(title);
+        this.author = Set.of(author);
         this.type = type;
     }
 
@@ -43,19 +58,19 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public String getTitle() {
+    public Title getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
+    public void setTitle(Title title) {
         this.title = title;
     }
 
-    public String getAuthor() {
+    public Set<Author> getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(Set<Author> author) {
         this.author = author;
     }
 
