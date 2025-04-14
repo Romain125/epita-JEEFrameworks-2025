@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-web" />
+        <module name="spring-jpa" />
         <module name="spring-bases" />
       </profile>
     </annotationProcessing>
@@ -14,6 +15,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-bases" options="-parameters" />
+      <module name="spring-jpa" options="-parameters" />
       <module name="spring-web" options="-parameters" />
     </option>
   </component>

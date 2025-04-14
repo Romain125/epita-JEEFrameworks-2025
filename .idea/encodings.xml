@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/spring-bases/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-bases/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-jpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-jpa/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web/src/main/resources" charset="UTF-8" />
   </component>
