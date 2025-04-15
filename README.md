@@ -68,7 +68,7 @@ Voici la liste des utilisateurs devant avoir accès à l'application.
 | meeple       | meeple          | joueur (!cotisant)  |
 | goldenmeeple | gold            | joueur (cotisant)   |
 
-Votre application doit également contenir un jeu de test au lancement (2 session tontenant chacune quelques tables) de manière à ce qu'une majorité de scénarios soient testables.
+Votre application doit également contenir un jeu de test au lancement (2 session contenant chacune quelques tables) de manière à ce qu'une majorité de scénarios soient testables.
 
 ------
 
