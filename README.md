@@ -55,6 +55,7 @@ Voici les contraintes :
 - Un joueur ne peut s'inscrire qu'une fois par table
 - Un joueur a le droit à une première séance gratuite (quelque soit le nombre de talbles auquel il joue)
 - Hormis la première séance, un joueur doit être cotisant pour pouvoir s'inscrire
+- ...et donc, une API de cotisation (bouchonnée par un System.out) sera nécessaire. Avec bien sûr la contrainte de ne pas pouvoir cotiser plus d'une fois.
 
 ------
 
