@@ -63,9 +63,9 @@ Voici la liste des utilisateurs devant avoir accès à l'application.
 | Username     | Password        | Role                |
 |--------------|-----------------|---------------------|
 | admin        | admin           | admin               |
-| animateur    | admin           | animateu            |
+| animateur    | anim            | animateur           |
 | meeple       | meeple          | joueur (!cotisant)  |
-| goldenmeeple | goldenmeeple    | joueur (cotisant)   |
+| goldenmeeple | gold            | joueur (cotisant)   |
 
 Votre application doit également contenir un jeu de test au lancement (2 session tontenant chacune quelques tables) de manière à ce qu'une majorité de scénarios soient testables.
 
