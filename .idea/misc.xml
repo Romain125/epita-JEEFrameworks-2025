@@ -7,7 +7,16 @@
         <option value="$PROJECT_DIR$/spring-web/pom.xml" />
         <option value="$PROJECT_DIR$/spring-bases/pom.xml" />
         <option value="$PROJECT_DIR$/spring-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-security/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-suite/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-2/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-2/module3/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/maven-suite/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="openjdk-22" project-jdk-type="JavaSDK">

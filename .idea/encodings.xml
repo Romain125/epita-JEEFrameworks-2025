@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/maven-2/module1/sousmodule1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-2/module1/sousmodule1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-2/module1/sousmodule2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-2/module1/sousmodule2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-2/module1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-2/module1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-2/module2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-2/module2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-2/module3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-2/module3/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-suite/module1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-suite/module1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-suite/module2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-suite/module2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-suite/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-suite/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-bases/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-bases/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-jpa/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-jpa/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-security/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-web/src/main/resources" charset="UTF-8" />
   </component>
