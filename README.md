@@ -85,6 +85,8 @@ L'application doit être faite avec les notions vues en cours. Cela comprend :
 
 ## Rendu
 
+La date du rendu est fiée au 30/06/2025. Les repos seront clonés à midi pile.
+
 Voici la liste des éléments à rendre afin d'être corrigé :
 - L'adresse d'un repo git contenant le code source de votre projet
   - Les repos seront clonés à date et heure du rendu. Tout commit effectué après ne sera pas pris en compte.
